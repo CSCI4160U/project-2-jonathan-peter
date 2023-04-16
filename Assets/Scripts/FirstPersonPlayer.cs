@@ -1,7 +1,9 @@
 using UnityEngine;
+using UnityEngine.Networking;
+using Mirror;
 
 [RequireComponent(typeof(CharacterController))]
-public class FirstPersonPlayer : MonoBehaviour {
+public class FirstPersonPlayer : NetworkBehaviour  {
     [Header("General")]
     [SerializeField] private float movementSpeed = 15f;
     [SerializeField] private CharacterController character;

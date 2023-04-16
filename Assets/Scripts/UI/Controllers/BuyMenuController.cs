@@ -19,7 +19,7 @@ public class BuyMenuController : MonoBehaviour
     private Transform towerSpawnTransform;
     void Start()
     {
-        Debug.Log(menuOpen);
+        
         
         var root = buyMenuDocument.rootVisualElement;
         background = root.Q<VisualElement>("Background");
